@@ -24,9 +24,9 @@ function Login() {
 
       // Redirect properly
       if (res.role === "ROLE_ADMIN") {
-        window.location.href = "/admin";
+        navigate("/admin");
       } else {
-        window.location.href = "/"; // AI page as home
+        navigate("/questions");
       }
 
     } catch {
